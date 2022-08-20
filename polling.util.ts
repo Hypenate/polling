@@ -5,7 +5,7 @@ import { startWith, switchMap, takeUntil } from 'rxjs/operators';
  * If started (polling), it returns how many polls it's at.
  * When a reset happens, the count is set back to zero and it restarts
  * @param isPolling - a subject to (de)active polling
- * @param resetTimes - a subject to reset the progress
+ * @param resetTimes - a subject to reset the progress (back to 0)
  * @param pollEveryMs - how many milliseconds should be between the calls
  * @param pollTimes - how many times the polling should be executed */
 export function createPollingObservable(
